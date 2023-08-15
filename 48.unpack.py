@@ -25,9 +25,9 @@ total(*coins) == total(coins[0], coins[1], coins[2])
 # print(total(**coins), "knuts")
 '''
 when we use dictionary we have to give double star/astersk before variable to unpack it, 
-but in dictionary it will unpack with (key = pair) example: 'galleons = 100' along with comma 
+but in dictionary it will unpack with (key = value) example: 'galleons = 100' along with comma 
 if more key-value pairs present
-total(**coins) == total(galleons = 100, sickles = 50, knuts = 25)
+line 25 i.e total(**coins) == total(galleons = 100, sickles = 50, knuts = 25)
 '''
 
 
@@ -40,7 +40,7 @@ NOTE: args is list
 NOTE: kwargs is a dictionary
 '''
 def f(*args, **kwargs):
-    # print("Positional: ", args)
+    print("Positional: ", args)
     print("Named: ", kwargs)
 
 f(galleons = 100, sickles = 50, knuts = 25)
